@@ -44,7 +44,16 @@ const DEFAULT_OPTIONS = [
     },
     unit: '%'
   },
-  
+  {
+    name: 'Sepia',
+    property: 'sepia',
+    value: 0,
+    range: {
+      min: 0,
+      max: 100
+    },
+    unit: '%'
+  },
 
 function App() {
   return (
