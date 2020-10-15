@@ -64,6 +64,17 @@ const DEFAULT_OPTIONS = [
     },
     unit: 'deg'
   },
+  {
+    name: 'Blur',
+    property: 'blur',
+    value: 0,
+    range: {
+      min: 0,
+      max: 20
+    },
+    unit: 'px'
+  }
+]
 
 function App() {
   return (
