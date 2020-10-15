@@ -77,6 +77,7 @@ const DEFAULT_OPTIONS = [
 ]
 
 function App() {
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0)
   return (
     <div className="container">
       <div className="main-image" />
