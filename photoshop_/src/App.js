@@ -24,7 +24,7 @@ const DEFAULT_OPTIONS = [
     },
     unit: '%'
   },
-   {
+  {
     name: 'Saturation',
     property: 'saturate',
     value: 100,
@@ -32,6 +32,19 @@ const DEFAULT_OPTIONS = [
       min: 0,
       max: 200
     },
+    unit: '%'
+  },
+  {
+    name: 'Grayscale',
+    property: 'grayscale',
+    value: 0,
+    range: {
+      min: 0,
+      max: 100
+    },
+    unit: '%'
+  },
+  
 
 function App() {
   return (
