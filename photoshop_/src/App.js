@@ -102,13 +102,28 @@ function App() {
 
   return (
     <div className="container">
-      <div className="main-image" />
+      <div className="main-image" style={getImageStyle()} />
       <div className="sidebar">
-        <SidebarItem />
+        {options.map((option, index) => {
+          return (
+            <SidebarItem
+              key={index}
+              name={option.name}
+              active={index === selectedOptionIndex}
+              handleClick={() => setSelectedOptionIndex(index)}
+            />
+          )
+        })}
       </div>
-      <Slider />
+      <Slider
+        min={selectedOption.range.min}
+        max={selectedOption.range.max}
+        value={selectedOption.value}
+        handleChange={handleSliderChange}
+      />
     </div>
   )
 }
+
 
 export default App;
