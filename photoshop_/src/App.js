@@ -14,6 +14,16 @@ const DEFAULT_OPTIONS = [
     },
     unit: '%'
   },
+  {
+    name: 'Contrast',
+    property: 'contrast',
+    value: 100,
+    range: {
+      min: 0,
+      max: 200
+    },
+    unit: '%'
+  },
 
 function App() {
   return (
